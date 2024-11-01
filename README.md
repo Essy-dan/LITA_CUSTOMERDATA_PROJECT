@@ -1,13 +1,12 @@
 # LITA_CUSTOMERDATA_PROJECT
 
+[Project Overview](#project overview)
+
 ### Project Overview
 This project involves analyzing customer data for a subscription service to identify segments and trends. 
+
 ### Goal
 To understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. 
-### Task
----
-
-
 
 ### Dataset Explanation
 ---
@@ -34,6 +33,23 @@ To understand customer behavior, track subscription types, and identify key tren
   
 - Year: The year of the subscription or activity, often extracted from the Subscription Start or Subscription End date. This field supports year-over-year trend analysis.
 
+### Tasks
+---
+
+1. In Excel:
+
+- Analyze customer data using pivot tables to find subscription patterns.
+  
+- Calculate the average subscription duration and identify the most popular 
+subscription types.
+
+2. In SQL:
+
+Write queries to extract key insights
+
+3. Power BI: 
+- Build a Power BI dashboard that visualizes key customer segments, 
+cancellations, and subscription trends. Include slicers for interactive analysis
 
 
 
