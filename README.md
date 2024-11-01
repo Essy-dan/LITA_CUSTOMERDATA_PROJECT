@@ -74,16 +74,9 @@ To understand customer behavior, track subscription types, and identify key tren
   
 - After dataset was brought to analysis ready state it was analysed as required using excel formulars and pivot tables.
   
-- Dataset was was converted to csv file and imported into your SQL Server environment to write and validate your queries.
-  
-- The dataset was loaded into Power BI from the original Excel source file, enabling further analysis and visualization within the Power BI environment.
+- The dataset was converted to a CSV file and imported into the SQL Server environment. This process allowed for the execution and validation of SQL queries to extract insights from the data, enabling a deeper analysis of customer behavior and subscription trends."
 
-
-
-"Initial data preparation included verification of columns, handling missing values, and removing duplicates to bring the dataset into an analysis-ready state."
-
-
-When describing loading into Power BI, you might want to add that the data was further transformed for calculations and visualizatio
+- The data was loaded into Power BI from the original Excel source file. After loading, the data was transformed to ensure accuracy and consistency, which included steps like handling missing values, correcting data types, and creating calculated columns and measures. This transformation enabled comprehensive analysis and effective visualization within the Power BI environment.
 
 ### Tasks
 ---
@@ -101,7 +94,11 @@ Write queries to extract key insights.
 
 3. Power BI: 
 - Build a Power BI dashboard that visualizes key customer segments, 
-cancellations, and subscription trends. Include slicers for interactive analysis
+cancellations, and subscription trends. Include slicers for interactive analysis.
+
+### Analysis
+---
+
 
 
 
