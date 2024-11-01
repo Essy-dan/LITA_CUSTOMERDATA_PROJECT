@@ -99,6 +99,10 @@ cancellations, and subscription trends. Include slicers for interactive analysis
 ### Analysis
 ---
 
+# Excel Analysis
+
+Finding Subscription Patterns
+
 
 
 
