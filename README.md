@@ -3,10 +3,40 @@
 [Project Overview](#project-overview)
 
 ### Project Overview
-This project involves analyzing customer data for a subscription service to identify segments and trends. 
+This project focuses on analyzing customer data for a subscription service, aiming to provide insights into customer segments, subscription behaviors, and trends in cancellations and renewals. The analysis seeks to understand key customer patterns, such as churn rates, retention, and preferred subscription types, to aid in strategic decision-making and improve customer engagement.
+
+The dataset contains detailed customer information, including subscription dates, types, revenue, and status (active or canceled). This data serves as the foundation for identifying trends and performing cohort analysis on customer retention and subscription lifecycle.
+
+The project was executed using a blend of tools:
+
+Excel for initial exploration, summary statistics, and pivot analysis to understand baseline patterns.
+
+SQL to perform deeper queries, allowing for the extraction of targeted insights on customer behavior, revenue trends, and churn analysis.
+
+Power BI to build a comprehensive dashboard that visualizes key metrics, customer segments, and interactive trends in cancellations and renewals.
 
 ### Goal
+---
+
 To understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. 
+
+### Objectives
+---
+
+- 1. Identify key customer segments based on subscription types and regions.
+
+- 2. Analyze churn rates to understand patterns in cancellations and retention.
+
+- 3. Visualize subscription trends to capture shifts in customer behavior over time.
+
+### Key Metrics
+---
+- Total Customers
+- Active vs. Churned Customers
+- Subscription Trends
+- Revenue by Subscription Type and Region
+- Cohort Analysis
+
 
 ### Dataset Explanation
 ---
@@ -36,9 +66,11 @@ To understand customer behavior, track subscription types, and identify key tren
   ### Data Preparation
   ---
 
-- Data Acquisition: The raw dataset was Downloaded from the learning management system (LMS) to local Excel for access.
+- Data was sourced from the learning management system (LMS) platform and downloaded as an Excel file for local access.
 
-- Data Preparation and Exploration: Dataset was loaded and explored for initial checks, including verifying columns, handling missing values, and duplicates.
+  Initial data preparation included verification of columns, handling missing values, and removing duplicates to bring the dataset into an analysis-ready state.
+
+- Data explored to uncover trends, gain insights, and identify patterns that would inform further analysis.  Dataset was loaded and explored for initial checks, including verifying columns, handling missing values, and duplicates.
   
 - After dataset was brought to analysis ready state it was analysed as required using excel formulars and pivot tables.
   
@@ -48,10 +80,10 @@ To understand customer behavior, track subscription types, and identify key tren
 
 
 
-Document any preprocessing steps taken, such as creating calculated columns (e.g., subscription duration, churn status), handling missing data, and defining customer segments.
+"Initial data preparation included verification of columns, handling missing values, and removing duplicates to bring the dataset into an analysis-ready state."
 
 
-  
+When describing loading into Power BI, you might want to add that the data was further transformed for calculations and visualizatio
 
 ### Tasks
 ---
