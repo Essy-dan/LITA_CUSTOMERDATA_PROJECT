@@ -1,6 +1,6 @@
 # LITA_CUSTOMERDATA_PROJECT
 
-[Project Overview](#project overview)
+[Project Overview](#project-overview)
 
 ### Project Overview
 This project involves analyzing customer data for a subscription service to identify segments and trends. 
@@ -33,6 +33,26 @@ To understand customer behavior, track subscription types, and identify key tren
   
 - Year: The year of the subscription or activity, often extracted from the Subscription Start or Subscription End date. This field supports year-over-year trend analysis.
 
+  ### Data Preparation
+  ---
+
+- Data Acquisition: The raw dataset was Downloaded from the learning management system (LMS) to local Excel for access.
+
+- Data Preparation and Exploration: Dataset was loaded and explored for initial checks, including verifying columns, handling missing values, and duplicates.
+  
+- After dataset was brought to analysis ready state it was analysed as required using excel formulars and pivot tables.
+  
+- Dataset was was converted to csv file and imported into your SQL Server environment to write and validate your queries.
+  
+- The dataset was loaded into Power BI from the original Excel source file, enabling further analysis and visualization within the Power BI environment.
+
+
+
+Document any preprocessing steps taken, such as creating calculated columns (e.g., subscription duration, churn status), handling missing data, and defining customer segments.
+
+
+  
+
 ### Tasks
 ---
 
@@ -45,7 +65,7 @@ subscription types.
 
 2. In SQL:
 
-Write queries to extract key insights
+Write queries to extract key insights.
 
 3. Power BI: 
 - Build a Power BI dashboard that visualizes key customer segments, 
