@@ -101,14 +101,40 @@ cancellations, and subscription trends. Include slicers for interactive analysis
 
 # Excel Analysis
 
-Finding Subscription Patterns
+Subscription Patterns
+
+![Screenshot (225)](https://github.com/user-attachments/assets/3c0635b3-1c69-4ed7-b1e1-3a0a25f198df)
+
+The pivot table "Subscription Patterns" provides an overview of revenue and customer counts across different regions (East, North, South, and West) and Subcription type for 2022 and the first eight months of 2023. Similar trend is observed across in revenue generated, customer count and subscription type. Aside from Basic subscription type which generated more revenue and and has has more customer base, reason being that it was utilized in two regions, the trend would still be similar if treated individually.  
+
+Key Insights:
+Revenue by Region
+Similar revenue pattern across regions, approximately #16.8 - #16.9 total revenue per Region for the period under review.
+
+Total Revenue:
+2022:
+2023 (Jan-Aug)
+Customer Count by Region and Month:
+2022: Steady at 3,750 customers per region each month.
+2023: Consistent at 3,750 customers per region each month.
+Total Customer Count:
+2022: 
+2023 (Jan-Aug): 
+Regional Performance:
+South and West regions lead in revenue.
+East and North regions slightly lower but show stable performance.
+Overall Trends:
+Stable subscription patterns with low churn.
+
+Opportunities for growth in East and North regions.
 
 
 
 
 
+![Screenshot (224)](https://github.com/user-attachments/assets/0b7a9b86-3290-49b2-8c3f-6bd122d0c8e0)
 
-
+The most popular subscription type was seen to be Basic which was utilized in the East and the North regions.  and the avearge subscription months was seen to be 12 months. 
 
 
 
@@ -186,3 +212,39 @@ WHERE CANCELED =1
 ACTIVE CUSTOMERS 
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =0
+
+
+
+
+Insights:
+Basic Subscription:
+
+Generates the highest revenue.
+The East region has the highest active subscriptions and no cancellations.
+North region has a significant number of cancellations, though using the same subscription type as the East region. 
+Premiun and Standard subscription type display similar performance in terms of active and cancelled subscriptions.
+The South and West regions have consistent active and cancelled subscriptions.
+Revenue Trends: All the four regions has similar revenue contribution for the period under review. 
+
+North region shows fluctuating revenue with high cancellations in May.
+South region exhibits steady growth followed by a decline.
+West region has consistent revenue with a decline in August.
+Recommendations:
+Study the East Region:
+Investigate factors contributing to high active subscriptions and zero cancellations. Implement successful strategies from the East region in other regions.
+Analyze Cancellation Reasons:
+Conduct a thorough analysis of the reasons behind the consistent cancellation numbers in the North, South, and West regions. Utilize insights to enhance customer retention strategies.
+Optimize Subscription Types:
+Promote and optimize Basic subscriptions across other regions, given its superior performance in revenue generation.
+Enhance Revenue Stability:
+Examine revenue fluctuations in the North, South, and West regions to identify and address causes of decline.
+Utilize Cohort Analysis:
+Leverage cohort month data to track and improve customer retention, focusing on identified churned months.
+Conclusion
+The Customer Subscription Analysis project, encompassing Excel, SQL, and Power BI, has provided a comprehensive view of subscription performance.
+
+
+
+Basic subscriptions generated the highest revenue. The East region had the highest active subscriptions with no cancellations. North, South, and West regions had similar active subscriptions but high cancellations. Identified peak churn months varied by region. The project revealed that the East region's practices could be a model for success in other regions. There is a need to develop targeted retention strategies for regions with high cancellations. Promoting Basic subscriptions while enhancing Premium and Standard offerings can balance revenue streams. Leveraging cohort analysis will help anticipate and mitigate churn, ensuring proactive customer retention. Cuold it be that telecomunication company is situatedin the East and thus enhance her effectiveness, then the company should think of increasing infra-structures in other regions to enhance her customer retention and thus increase revenue. 
+
+Overall, the integrated approach has provided actionable intelligence for optimizing subscription performance, enhancing customer retention, and maximizing revenue across all regions and subscription types.
