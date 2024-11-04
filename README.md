@@ -103,7 +103,141 @@ cancellations, and subscription trends. Include slicers for interactive analysis
 
 Subscription Patterns
 
-![Screenshot (247)](https://github.com/user-attachments/assets/912f2063-9213-4e3c-94aa-2cd7da5dfcb1)
+![Screenshot (262)](https://github.com/user-attachments/assets/4c26d465-0112-4e5f-8992-64372fea33f7)
+
+
+Summary of Subscription Data
+
+1. East Region - Basic Subscription Type:
+
+2022:
+
+March: 169,000 subscribers
+
+July: 1,714 subscribers
+
+November: 1,718 subscribers
+
+
+2023:
+
+March: 1,666 subscribers (slight decrease from 2022)
+
+July: 1,680 subscribers (slight increase from March 2023)
+
+2. North Region - Basic Subscription Type:
+
+2022:
+
+January: 1,693 subscribers
+
+May: 1,673 subscribers
+
+September: 1,685 subscribers
+
+
+2023:
+
+January: 1,692 subscribers (consistent with the prior year)
+
+May: 1,690 subscribers (marginal increase)
+
+
+
+
+3. South Region - Premium Subscription Type:
+
+2022:
+
+February: 1,693 subscribers
+
+June: 1,679 subscribers
+
+October: 1,692 subscribers
+
+
+2023:
+
+February: 1,686 subscribers (slight decline)
+
+
+
+
+4. West Region - Standard Subscription Type:
+
+2022:
+
+April: 1,662 subscribers
+
+August: 1,676 subscribers
+
+December: 1,700 subscribers
+
+
+2023:
+
+April: 1,687 subscribers (increase from prior year)
+
+December: 1,695 subscribers (slight decrease from December 2022)
+
+
+
+
+
+Key Insights and Observations
+
+1. Stable Subscription Counts Across Regions and Subscription Types:
+
+Across the regions, there are generally small fluctuations month-to-month and year-to-year. This consistency might suggest strong customer loyalty, with minor seasonal or monthly variations.
+
+
+
+2. Marginal Declines in Certain Regions and Months:
+
+For the East region (Basic), the March and July counts in 2023 are slightly lower than in 2022, indicating a minor decline in subscriber retention or acquisition.
+
+In the South region (Premium), February 2023 shows a small decline compared to 2022. This could reflect a reduced appeal or shift in customer preferences for premium plans.
+
+
+
+3. Higher Consistency in the North for Basic Subscriptions:
+
+The North region shows very stable subscriber counts for the basic subscription between 2022 and 2023, with nearly identical numbers in January and only a slight increase in May. This stability might suggest a reliable customer base with a consistent preference for the basic plan.
+
+
+
+4. Increased Subscription Counts in the West Region (Standard Subscription):
+
+In the West region for the standard subscription, April and December 2023 show slight increases from 2022. This could point to a rising interest in the standard subscription in this region, possibly due to targeted promotions or improved satisfaction with the standard package.
+
+
+
+5. Patterns in Monthly Subscription Uptake:
+
+Each region appears to have specific months with higher subscriber counts, potentially influenced by regional or seasonal factors. For example:
+
+Basic in the East and North shows a larger count in months like March and July for the East, and January for the North.
+
+Premium in the South shows stable interest around February.
+
+Standard in the West peaks around December, suggesting possible end-of-year promotions or renewals.
+
+
+
+
+6. Potential Regional Preferences for Subscription Types:
+
+The data suggests a clear regional preference:
+
+East and North regions favor Basic subscriptions.
+
+South favors Premium.
+
+West leans towards Standard.
+
+
+This trend could imply that different subscription tiers meet unique needs in each region. Further investigation could clarify whether factors like income levels, regional service availability, or targeted marketing campaigns contribute to these preferences
+
 
 
 ![Screenshot (254)](https://github.com/user-attachments/assets/f9c80c4d-5fc5-46b2-9f0a-75c22750c7b8)
@@ -113,6 +247,11 @@ Subscription Patterns
 
 - Uniform Pricing and Customer Base: The revenue figures across regions are very close, which could indicate that each region has a similar-sized subscriber base and a uniform pricing structure for each subscription type. This implies that pricing and subscription adoption rates may be stable across
 different regions, suggesting a successful standardization of the subscription model.
+
+**Strong Revenue Performance from Regional Distribution**
+
+Balanced Revenue Contributions: The fact that each subscription type in its respective region is generating similar revenue shows the company has successfully tailored or promoted these types to fit the preferences of each region. It reflects a good alignment between each subscription type and the unique customer demographics or needs of each region.
+
 
 ![Screenshot (253)](https://github.com/user-attachments/assets/547d3f3c-8c62-4d92-b3c9-4b32e71050f1)
  
@@ -137,29 +276,50 @@ Average Subscription Duration
 
 ![Screenshot (244)](https://github.com/user-attachments/assets/10f4e2ad-3381-4ea3-bb45-17cdaea02a80)
 
+
+
 ![Screenshot (261)](https://github.com/user-attachments/assets/918a3145-1692-4f64-9e0c-4f2f98408a14)
 
 
-![Screenshot (247)](https://github.com/user-attachments/assets/03fc7554-90f5-40cb-9604-bfe765e34870)
+Subscription Type Positioning
+
+Basic as the Popular Option: Basic’s widespread use might be due to factors such as affordability, accessibility, or general feature appeal. If Basic is viewed as an entry-level option, its success across two regions may imply that there’s a strong customer base that prefers a simpler, cost-effective subscription.
+
+Premium and Standard as Higher-Tier Options: Since Premium and Standard are available in only one region each but still generate revenue on par with Basic, it suggests they may be effectively positioned as higher-tier options with a more specific value proposition. This could appeal to customers looking for additional features or services.
 
 
+![Screenshot (255)](https://github.com/user-attachments/assets/b8a30afd-30f7-4dbf-bd65-34d2a4dc4b8e)
+
+1. Basic Subscription – East vs. North
+
+No Cancellations in the East: The fact that there were zero cancellations for Basic in the East region suggests high customer satisfaction and loyalty. This could be attributed to:
+
+Greater alignment with customer expectations: Customers in the East might feel that the Basic subscription meets their needs, reducing their likelihood to cancel.
+
+Potential cultural or regional differences: There may be regional characteristics that make East customers more likely to retain their subscription. This could be due to economic factors, loyalty to the brand, or lesser exposure to competing services.
+
+Service Quality or Customer Engagement: If there are differences in how services are delivered or promoted in the East (such as more effective customer support, tailored content, or local partnerships), this might contribute to higher retention for Basic users.
 
 
+Significant Cancellations in the North: With 5,067 cancellations for Basic in the North, we see a stark contrast to the East. Possible reasons for this could be:
 
+Unmet Expectations or Value Perception: Customers in the North may feel that the Basic tier lacks some features or benefits they value, leading to higher cancellations.
 
+Competition or Alternative Options: The North region could have more exposure to competitors or alternative services, prompting users to switch or reconsider their subscription.
 
+Demographic or Behavioral Differences: There may be demographic factors at play, such as a younger or more price-sensitive customer base in the North, that makes users more likely to cancel if they do not see immediate or consistent value.
 
+2. Premium and Standard – South and West
 
+Similar Cancellation Patterns: For Premium in the South and Standard in the West, cancellation patterns are quite similar, with a high number of cancellations (5,064 in the South and 5,044 in the West) relative to the non-cancellations.
 
+Regional Preferences and Subscription Type Fit: This similarity suggests that while these tiers (Premium and Standard) may be popular, they may not fully meet customer expectations across both regions:
 
+Feature Expectations vs. Pricing: The Premium subscribers in the South and Standard subscribers in the West might have high expectations in terms of features or benefits. If these expectations aren’t fully met, it could lead to cancellations.
 
+Considerations for Retention Strategies: The company could explore whether adding tailored features, promotions, or discounts for these regions could improve retention rates.
 
-
-
-
-
-
-
+Market Saturation or Churn Factors: If both regions have reached a market saturation point or if customers are quick to change services, it might reflect in high cancellation rates for these tiers.
 
 1 retrieve the total number of customers from each region.
 
@@ -225,38 +385,26 @@ ACTIVE CUSTOMERS
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =0
 
+### Key Insights and Recommendation
+
+Maintaining High Retention in the East: With zero cancellations, the East is a model region for the Basic subscription. To maintain this, the company should:
+
+Leverage What’s Working: Investigate what drives satisfaction in the East and look for ways to replicate this success in other regions.
+
+Promote Regional Loyalty: Emphasizing regional loyalty programs or exclusive East-focused benefits could continue fostering the high retention rate here.
+
+
+Customized Engagement for Premium and Standard in the South and West: For these higher tiers, the company could:
+
+Focus on Added Value: Consider adding premium benefits or rewards for long-term subscribers in the South and West to make the subscription feel more valuable.
+
+Address Potential Service Gaps: Ensure that the features and benefits of these subscription types align closely with customer expectations, possibly by introducing customizable options.
+
+company could consider specific strategies to retain these users. This might include:
+
+Adding Flexible Options: Introducing flexible plans, feature upgrades, or discount promotions could make the Basic subscription more appealing and reduce churn in the North.
+
+Targeted Customer Feedback: Gathering feedback from North region customers who canceled could provide valuable insights into unmet needs or areas for improvement in the Basic subscription.
 
 
 
-Insights:
-Basic Subscription:
-
-Generates the highest revenue.
-The East region has the highest active subscriptions and no cancellations.
-North region has a significant number of cancellations, though using the same subscription type as the East region. 
-Premiun and Standard subscription type display similar performance in terms of active and cancelled subscriptions.
-The South and West regions have consistent active and cancelled subscriptions.
-Revenue Trends: All the four regions has similar revenue contribution for the period under review. 
-
-North region shows fluctuating revenue with high cancellations in May.
-South region exhibits steady growth followed by a decline.
-West region has consistent revenue with a decline in August.
-Recommendations:
-Study the East Region:
-Investigate factors contributing to high active subscriptions and zero cancellations. Implement successful strategies from the East region in other regions.
-Analyze Cancellation Reasons:
-Conduct a thorough analysis of the reasons behind the consistent cancellation numbers in the North, South, and West regions. Utilize insights to enhance customer retention strategies.
-Optimize Subscription Types:
-Promote and optimize Basic subscriptions across other regions, given its superior performance in revenue generation.
-Enhance Revenue Stability:
-Examine revenue fluctuations in the North, South, and West regions to identify and address causes of decline.
-Utilize Cohort Analysis:
-Leverage cohort month data to track and improve customer retention, focusing on identified churned months.
-Conclusion
-The Customer Subscription Analysis project, encompassing Excel, SQL, and Power BI, has provided a comprehensive view of subscription performance.
-
-
-
-Basic subscriptions generated the highest revenue. The East region had the highest active subscriptions with no cancellations. North, South, and West regions had similar active subscriptions but high cancellations. Identified peak churn months varied by region. The project revealed that the East region's practices could be a model for success in other regions. There is a need to develop targeted retention strategies for regions with high cancellations. Promoting Basic subscriptions while enhancing Premium and Standard offerings can balance revenue streams. Leveraging cohort analysis will help anticipate and mitigate churn, ensuring proactive customer retention. Cuold it be that telecomunication company is situatedin the East and thus enhance her effectiveness, then the company should think of increasing infra-structures in other regions to enhance her customer retention and thus increase revenue. 
-
-Overall, the integrated approach has provided actionable intelligence for optimizing subscription performance, enhancing customer retention, and maximizing revenue across all regions and subscription types.
