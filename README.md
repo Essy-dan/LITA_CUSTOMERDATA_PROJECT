@@ -103,9 +103,11 @@ cancellations, and subscription trends. Include slicers for interactive analysis
 
 Subscription Patterns
 
-![Screenshot (225)](https://github.com/user-attachments/assets/3c0635b3-1c69-4ed7-b1e1-3a0a25f198df)
+![Screenshot (247)](https://github.com/user-attachments/assets/912f2063-9213-4e3c-94aa-2cd7da5dfcb1)
 
-The pivot table "Subscription Patterns" provides an overview of revenue and customer counts across different regions (East, North, South, and West) and Subcription type for 2022 and the first eight months of 2023. Similar trend is observed across in revenue generated, customer count and subscription type. Aside from Basic subscription type which generated more revenue and and has has more customer base, reason being that it was utilized in two regions, the trend would still be similar if treated individually.  
+
+The pivot table "Subscription Patterns" provides an overview of revenue and customer counts across different regions (East, North, South, and West) and Subcription type for 2022 and the first eight months of 2023. Similar trend is observed across in revenue generated, customer count and subscription type. Aside from Basic subscription type which generated more revenue and and has has more customer base, reason b![Screenshot (247)](https://github.com/user-attachments/assets/03fc7554-90f5-40cb-9604-bfe765e34870)
+eing that it was utilized in two regions, the trend would still be similar if treated individually.  
 
 Key Insights:
 Revenue by Region
