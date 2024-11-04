@@ -106,37 +106,47 @@ Subscription Patterns
 ![Screenshot (247)](https://github.com/user-attachments/assets/912f2063-9213-4e3c-94aa-2cd7da5dfcb1)
 
 
-The pivot table "Subscription Patterns" provides an overview of revenue and customer counts across different regions (East, North, South, and West) and Subcription type for 2022 and the first eight months of 2023. Similar trend is observed across in revenue generated, customer count and subscription type. Aside from Basic subscription type which generated more revenue and and has has more customer base, reason b![Screenshot (247)](https://github.com/user-attachments/assets/03fc7554-90f5-40cb-9604-bfe765e34870)
-eing that it was utilized in two regions, the trend would still be similar if treated individually.  
-
-Key Insights:
-Revenue by Region
-Similar revenue pattern across regions, approximately #16.8 - #16.9 total revenue per Region for the period under review.
-
-Total Revenue:
-2022:
-2023 (Jan-Aug)
-Customer Count by Region and Month:
-2022: Steady at 3,750 customers per region each month.
-2023: Consistent at 3,750 customers per region each month.
-Total Customer Count:
-2022: 
-2023 (Jan-Aug): 
-Regional Performance:
-South and West regions lead in revenue.
-East and North regions slightly lower but show stable performance.
-Overall Trends:
-Stable subscription patterns with low churn.
-
-Opportunities for growth in East and North regions.
+![Screenshot (254)](https://github.com/user-attachments/assets/f9c80c4d-5fc5-46b2-9f0a-75c22750c7b8)
 
 
+**Observations on Revenue Consistency**
+
+- Uniform Pricing and Customer Base: The revenue figures across regions are very close, which could indicate that each region has a similar-sized subscriber base and a uniform pricing structure for each subscription type. This implies that pricing and subscription adoption rates may be stable across
+different regions, suggesting a successful standardization of the subscription model.
+
+![Screenshot (253)](https://github.com/user-attachments/assets/547d3f3c-8c62-4d92-b3c9-4b32e71050f1)
+ 
+- Limited Regional Variability in Spending: The small differences in revenue across regions imply minimal variation in customer spending behavior. This may indicate that the subscription appeal is consistent across these regions, with each region having a similar level of engagement and perceived value in the subscription offerings.
+
+  ![Screenshot (259)](https://github.com/user-attachments/assets/1080d726-6aa4-4d65-9e8a-407411544c5f)
+
+- Subscription Type Appeal: Since each region predominantly relies on a different subscription type but generates similar revenue, it could suggest that each subscription type is effectively priced to balance between value and revenue generation.
+  
+ For example:
+Basic performs strongly in the East and North.
+Premium is successful in the South.
+Standard meets the needs of the West.
+
+![Screenshot (260)](https://github.com/user-attachments/assets/671f2464-29ae-4b9e-8462-d402ff41bd09)
+
+Revenue Parity Across Subscription Types
+
+Basic’s Regional Split: While Basic has the highest total revenue, this is largely due to its presence in both the East and North. When we look at individual regions, the revenue from Basic in each region (East and North) is comparable to what Premium brings in from the South or what Standard brings in from the West. This suggests that the revenue generation per region is fairly balanced across all subscription types.
+
+Average Subscription Duration
+
+![Screenshot (244)](https://github.com/user-attachments/assets/10f4e2ad-3381-4ea3-bb45-17cdaea02a80)
+
+![Screenshot (261)](https://github.com/user-attachments/assets/918a3145-1692-4f64-9e0c-4f2f98408a14)
+
+
+![Screenshot (247)](https://github.com/user-attachments/assets/03fc7554-90f5-40cb-9604-bfe765e34870)
 
 
 
-![Screenshot (224)](https://github.com/user-attachments/assets/0b7a9b86-3290-49b2-8c3f-6bd122d0c8e0)
 
-The most popular subscription type was seen to be Basic which was utilized in the East and the North regions.  and the avearge subscription months was seen to be 12 months. 
+
+
 
 
 
