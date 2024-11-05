@@ -321,6 +321,10 @@ Considerations for Retention Strategies: The company could explore whether addin
 
 Market Saturation or Churn Factors: If both regions have reached a market saturation point or if customers are quick to change services, it might reflect in high cancellation rates for these tiers.
 
+**Cohort Analysis**
+
+
+
 1 retrieve the total number of customers from each region.
 
 SELECT COUNT(CustomerName) AS Total_Customer, Region AS TotalPerRegion FROM [dbo].[CustomerDataProject]
