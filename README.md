@@ -2,6 +2,26 @@
 
 [Project Overview](#project-overview)
 
+[Goal](#goal)
+
+[Objective](objective)
+
+[Key Metrics](#key-metrics)
+
+[Dataset Explanation](#dataset-explanation)
+
+[Data Preparation](#data-preparation)
+
+[Tasks](#tasks)
+
+[Analysis and Discussion](#analysis-and-discussion)
+
+[Interactive Dashboard](#interactive-dashboard)
+
+[Key Insights and Recommendations](#key-insight-and-recommenadtion)
+
+[Conclusion](#conclusion)
+
 ### Project Overview
 This project focuses on analyzing customer data for a subscription service, aiming to provide insights into customer segments, subscription behaviors, and trends in cancellations and renewals. The analysis seeks to understand key customer patterns, such as churn rates, retention, and preferred subscription types, to aid in strategic decision-making and improve customer engagement.
 
@@ -96,7 +116,7 @@ Write queries to extract key insights.
 - Build a Power BI dashboard that visualizes key customer segments, 
 cancellations, and subscription trends. Include slicers for interactive analysis.
 
-### Analysis
+### Analysis and Discussion
 ---
 
 # Excel Analysis
@@ -244,6 +264,8 @@ Basic’s Regional Split: While Basic has the highest total revenue, this is lar
 
 **Average Subscription Duration**
 
+![Screenshot (244)](https://github.com/user-attachments/assets/10f4e2ad-3381-4ea3-bb45-17cdaea02a80)
+
 1. Consistency in Average Subscription Duration
 
 Uniform Subscription Duration: The fact that the average subscription duration is 12 months across all subscription types suggests that customers generally maintain their subscriptions for a full year regardless of tier. This could indicate:
@@ -252,9 +274,7 @@ Satisfaction with Annual Commitments: The 12-month average could mean that custo
 
 Alignment with Pricing Model: If subscriptions are primarily structured on an annual basis, customers may naturally renew for the full year. This may reflect a successful pricing model that encourages sustained engagement.
 
-
 Potential for Long-Term Retention: With the majority of subscribers maintaining this duration, the company could focus on strategies to encourage renewals, potentially increasing lifetime value by promoting benefits of multi-year commitments or providing renewal incentives.
-
 
 2. Popularity of the Basic Subscription Type
 
@@ -281,11 +301,6 @@ High Reach with Basic as Entry Point: Basic’s widespread popularity indicates 
 Opportunities for Tiered Growth: Given the consistent 12-month duration and Basic’s broad appeal, the company could focus on nurturing customer loyalty and engagement at the Basic level and then encouraging growth through tiered offerings. For instance, running educational campaigns or showcasing Premium benefits to Basic users might help them understand the value of upgrading.
 
 Region-Based Tailoring for Subscription Enhancement: Recognizing the regional preferences for each type, the company can customize feature enhancements or promotional campaigns to match customer demand. In the South, for example, adding more exclusive Premium features might improve perceived value, while in the West, offering flexible subscription options or periodic benefits could appeal to Standard users.
-
-
-![Screenshot (244)](https://github.com/user-attachments/assets/10f4e2ad-3381-4ea3-bb45-17cdaea02a80)
-
-
 
 ![Screenshot (261)](https://github.com/user-attachments/assets/918a3145-1692-4f64-9e0c-4f2f98408a14)
 
@@ -361,14 +376,12 @@ If you notice demand exists for start dates outside the current cycle, consider 
 
 It’s also worth examining why some regions follow different cycles. For instance, the West has Standard subscriptions starting only in April, August, and December. This suggests regional differences in demand or operational considerations, which could be linked to regional resource availability or specific customer preferences.
 
-
-
-
+**SQL Queries**
 
 1 retrieve the total number of customers from each region.
 
-SELECT COUNT(CustomerName) AS Total_Customer, Region AS TotalPerRegion FROM [dbo].[CustomerDataProject]
-GROUP BY Region
+ ```SELECT COUNT(CustomerName) AS Total_Customer, Region AS TotalPerRegion FROM [dbo].[CustomerDataProject]
+GROUP BY Region```
 
  Q2. find the most popular subscription type by the number of customers.
 
@@ -428,7 +441,9 @@ WHERE CANCELED =1
 ACTIVE CUSTOMERS 
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =0
-### Dashboard
+
+
+### Interactive Dashboard
 ---
 
 ### Key Insights and Recommendation
