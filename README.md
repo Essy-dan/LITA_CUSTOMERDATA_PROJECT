@@ -461,10 +461,11 @@ ACTIVE CUSTOMERS
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =0
 ```
+
 ### Interactive Dashboard
 ---
 
-![Screenshot (269)](https://github.com/user-attachments/assets/3bb10d25-2ff9-4e76-89a9-e0036086c3cb)
+![Screenshot (269)](https://github.com/user-attachments/assets/a5466c70-24e6-4878-8894-5f79fa52ab7c)
 
 ### Key Insights and Recommendation
 
