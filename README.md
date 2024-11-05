@@ -380,43 +380,60 @@ It’s also worth examining why some regions follow different cycles. For instan
 
 1 retrieve the total number of customers from each region.
 
- ```SELECT COUNT(CustomerName) AS Total_Customer, Region AS TotalPerRegion FROM [dbo].[CustomerDataProject]
-GROUP BY Region```
+ ```SQL
+SELECT COUNT(CustomerName) AS Total_Customer, Region AS TotalPerRegion FROM [dbo].[CustomerDataProject]
+GROUP BY Region
+```
 
  Q2. find the most popular subscription type by the number of customers.
 
+```SQL
 SELECT COUNT(CustomerName) AS Total_Customer, SubscriptionType AS Most_Popular FROM [dbo].[CustomerDataProject]
 GROUP BY SubscriptionType
 ORDER BY  Total_Customer DESC
+```
 
 Q3.  find customers who canceled their subscription within 6 months.
+```SQL
 ALTER TABLE [dbo].[CustomerDataProject]
 ADD Subscriptiondurationmonths Int
+```
 
+```SQL
 UPDATE [dbo].[CustomerDataProject]
 SET Subscription_duration_months = DATEDIFF(month, SubscriptionStart, SubscriptionEnd)
+```
 
+```SQL
 SELECT COUNT(*) AS CUSTOMERWITHSHORTSUBSCRIPTIONS FROM [dbo].[CustomerDataProject]
 WHERE SUBSCRIPTION_DURATION_MONTHS < 6
+```
 
 Q4 calculate the average subscription duration for all customers.
 
+```SQL
 SELECT AVG(Subscription_duration_months) AS Averagesubscriptionduration FROM [dbo].[CustomerDataProject]
+```
 
- 5. find customers with subscriptions longer than 12 months. 
+5. find customers with subscriptions longer than 12 months. 
 
- SELECT CUSTOMERID, subscription_duration_months FROM [dbo].[CustomerDataProject]
+ ```SQL
+SELECT CUSTOMERID, subscription_duration_months FROM [dbo].[CustomerDataProject]
  WHERE subscription_duration_months > 12
+```
 
 6. calculate total revenue by subscription type.
 
+```SQL
 SELECT SubscriptionType, SUM(Revenue) AS Total_Revenue FROM [dbo].[CustomerDataProject]
 GROUP BY SubscriptionType
 ORDER BY Total_Revenue
+```
 
 
 7.find the top 3 regions by subscription cancellations. 
 
+```SQL
 SELECT TOP 3
     Region, 
     COUNT(*) AS TotalCancellations
@@ -426,25 +443,28 @@ WHERE
 GROUP BY 
     Region
 ORDER BY 
-    TotalCancellations DESC 
+    TotalCancellations DESC
+``` 
 
 8. find the total number of active and canceled subscriptions.
 
-
-CUSTOMERS WITH LESS THAN 6 MONTHS CANCELLATIONS
-
-
 TOTAL CANCELLATION
 
+```SQL
 SELECT COUNT(*) AS CANCELEDSUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =1
+```
+
 ACTIVE CUSTOMERS 
+
+``SQL
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =0
-
-
+```
 ### Interactive Dashboard
 ---
+
+![Screenshot (269)](https://github.com/user-attachments/assets/3bb10d25-2ff9-4e76-89a9-e0036086c3cb)
 
 ### Key Insights and Recommendation
 
@@ -453,7 +473,6 @@ Maintaining High Retention in the East: With zero cancellations, the East is a m
 - Leverage What’s Working: Investigate what drives satisfaction in the East and look for ways to replicate this success in other regions.
 
 - Promote Regional Loyalty: Emphasizing regional loyalty programs or exclusive East-focused benefits could continue fostering the high retention rate here.
-
 
 - Customized Engagement for Premium and Standard in the South and West: For these higher tiers, the company could:
 
