@@ -380,24 +380,99 @@ It’s also worth examining why some regions follow different cycles. For instan
 
 1 retrieve the total number of customers from each region.
 
- ```SQL
-SELECT COUNT(CustomerName) AS Total_Customer, Region AS TotalPerRegion FROM [dbo].[CustomerDataProject]
+```SQL
+SELECT COUNT(CustomerID) AS Total_Customer, Region FROM [dbo].[CustomerDataProject]
 GROUP BY Region
 ```
 
- Q2. find the most popular subscription type by the number of customers.
+![Screenshot (282)](https://github.com/user-attachments/assets/1bc7a196-c4e4-4253-b00b-2091ac639789)
+
+Explanation
+
+1. SELECT Clause:
+
+Region: This field specifies the region for each customer.
+
+COUNT(CustomerID) AS TotalCustomers: The COUNT() function counts the number of CustomerID entries in
+
+each region. AS TotalCustomers renames the count output column to make it easier to read.
+
+2. FROM Clause:
+
+FROM [dbo].[CustomerDataProject]: This specifies the source table, CustomersDataProject, which stores all customer records,
+
+including the CustomerID and Region.
+
+3. GROUP BY Clause:
+
+GROUP BY Region: This groups the data by Region. Without grouping, SQL would treat the entire dataset
+
+as one block and simply return the total count of all customers. By grouping by Region, SQL
+
+calculates the customer count for each unique region separately.
+
+Result
+
+The query outputs a list showing each region and the total number of customers in that region, 
+
+helping identify the distribution of customers across regions.
+
+Q2. find the most popular subscription type by the number of customers.
 
 ```SQL
-SELECT COUNT(CustomerName) AS Total_Customer, SubscriptionType AS Most_Popular FROM [dbo].[CustomerDataProject]
+SELECT COUNT(CustomerID) AS Total_Customer, SubscriptionType FROM [dbo].[CustomerDataProject]
 GROUP BY SubscriptionType
 ORDER BY  Total_Customer DESC
 ```
 
+![Screenshot (283)](https://github.com/user-attachments/assets/029c5047-800d-4186-8c76-6bead17828c3)
+
+To find the most popular subscription type by the number of customers, you would typically use a 
+
+query that groups the data by subscriptionType and counts the number of customers for each type.
+
+Then, it sorts the results to show the highest count first. 
+
+Explanation
+
+1. SELECT Clause:
+
+SubscriptionType: Selects the SubscriptionType column to identify each subscription type.
+
+COUNT(CustomerID) AS TotalCustomers: Counts the number of customers associated with each 
+
+SubscriptionType. The result is labeled as TotalCustomers for readability.
+
+2. FROM Clause:
+
+FROM Customers: Specifies the Customers table as the source.
+
+3. GROUP BY Clause:
+
+GROUP BY SubscriptionType: Groups the results by each unique subscription type, so SQL calculates the
+
+customer count for each type separately.
+
+4. ORDER BY Clause:
+
+ORDER BY TotalCustomers DESC: Orders the grouped results in descending order, so the subscription 
+
+type with the highest customer count appears at the top.
+
+Result
+
+This query returns the subscription type with the highest number of customers, providing insight into
+
+the popularity of each type among customers.
+
 Q3.  find customers who canceled their subscription within 6 months.
+
 ```SQL
 ALTER TABLE [dbo].[CustomerDataProject]
 ADD Subscriptiondurationmonths Int
 ```
+
+Added a new column name d subscriptiondurationmonth.
 
 ```SQL
 UPDATE [dbo].[CustomerDataProject]
@@ -409,18 +484,64 @@ SELECT COUNT(*) AS CUSTOMERWITHSHORTSUBSCRIPTIONS FROM [dbo].[CustomerDataProjec
 WHERE SUBSCRIPTION_DURATION_MONTHS < 6
 ```
 
+![Screenshot (275)](https://github.com/user-attachments/assets/9c6a3b5d-786f-4de5-a8ae-499aaf538ea3)
+
+To identify customers who canceled their subscription within six months, we can compare their
+
+subscription start date to their cancellation date or end date. If the time difference is six 
+
+or less, then they meet the criteria for this query.
+
+Explanation
+
+1. SELECT Clause:
+
+CustomerID, SubscriptionType, StartDate, EndDate: Selects relevant columns, including the customer
+
+ID, subscription type, subscription start date, and end date, to show which customers meet the
+
+criteria.
+
+2. FROM Clause:
+
+FROM [dbo].[CustomerDataProject]: Specifies the CustomeDataPRroject table as the data source.
+
+3. WHERE Clause:
+
+DATEDIFF(MONTH, StartDate, EndDate) <= 6: Uses the DATEDIFF function to calculate the difference
+
+between StartDate and EndDate in months. If this difference is six months or less, then it matches
+
+the condition.
+
+Result
+
+This query returned zero, because there are customers who cancelled their subscription within 6 month.
+
 Q4 calculate the average subscription duration for all customers.
 
 ```SQL
 SELECT AVG(Subscription_duration_months) AS Averagesubscriptionduration FROM [dbo].[CustomerDataProject]
 ```
 
-5. find customers with subscriptions longer than 12 months. 
+![Screenshot (276)](https://github.com/user-attachments/assets/1a2ca1ea-2449-41a4-aac3-3694c716d8ac)
+
+The query returns the average subscription duration in months for all customers, giving insight into
+
+the typical length of a subscription, regardless of whether it is currently active or completed.
+
+5. find customers with subscriptions longer than 12 months.
 
  ```SQL
 SELECT CUSTOMERID, subscription_duration_months FROM [dbo].[CustomerDataProject]
  WHERE subscription_duration_months > 12
 ```
+
+![Screenshot (277)](https://github.com/user-attachments/assets/b79e8a9f-463a-4594-9b96-f2c7da87d42d
+
+This query did not return any value because there are no customers with subcription month longer 
+
+12 months. the average subscription month is 12 months. 
 
 6. calculate total revenue by subscription type.
 
@@ -430,6 +551,33 @@ GROUP BY SubscriptionType
 ORDER BY Total_Revenue
 ```
 
+![Screenshot (279)](https://github.com/user-attachments/assets/33a63f48-ca89-405a-bad6-dfaa669a8b1f)
+
+To calculate the total revenue by subscription type, you can use a query that groups revenue by the
+
+SubscriptionType and sums the revenue for each type. 
+
+Explanation
+
+1. SELECT Clause:
+
+SubscriptionType: Groups results by each unique subscription type (e.g., Basic, Premium, Standard).
+
+SUM(Revenue) AS Total_Revenue: Calculates the total revenue by summing up the Revenue for 
+
+subscription type.
+
+2. GROUP BY Clause:
+
+GROUP BY SubscriptionType: Aggregates the data by each subscription type, so each row in the output
+
+represents one type with its corresponding total revenue.
+
+Result
+
+This query provides the total revenue generated for each subscription type, which is helpful for
+
+identifying which subscription types contribute most to the business’s revenue
 
 7.find the top 3 regions by subscription cancellations. 
 
@@ -444,7 +592,49 @@ GROUP BY
     Region
 ORDER BY 
     TotalCancellations DESC
-``` 
+```
+
+![Screenshot (278)](https://github.com/user-attachments/assets/3462140d-9b54-49ad-8f70-5fad28dd2c48)
+
+To identify the top three regions by subscription cancellations, you can use a query that groups the
+
+data by Region, counts the cancellations, and then sorts the result in descending order to retrieve
+
+the top three regions with the highest cancellation counts. Here’s how the SQL query would look:
+
+Explanation
+
+1. SELECT Clause:
+
+Region: Groups the results by each unique region.
+
+COUNT(*) AS CancellationCount: Counts the number of cancellations for each region where Cancelled is
+
+marked as 1 (assuming Cancelled = 1 indicates a canceled subscription).
+
+2. WHERE Clause:
+
+WHERE Cancelled = 1: Filters the data to include only canceled subscriptions.
+
+3. GROUP BY Clause:
+
+GROUP BY Region: Aggregates the data by region, so each row in the output represents one region with
+
+its cancellation count.
+
+4. ORDER BY Clause:
+
+ORDER BY CancellationCount DESC: Sorts the results in descending order by the cancellation count to
+
+ensure the regions with the highest cancellations appear first.
+
+Result
+
+This query will return the top three regions with the highest number of subscription cancellations,
+
+which can help the business identify areas where cancellations are more frequent and may need further
+
+investigation into potential causes.
 
 8. find the total number of active and canceled subscriptions.
 
@@ -455,12 +645,25 @@ SELECT COUNT(*) AS CANCELEDSUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =1
 ```
 
+![Screenshot (280)](https://github.com/user-attachments/assets/443eb227-8774-4248-9c42-f138d4c7b149)
+
+COUNT(*) AS CancellationCount: Counts the number of cancelled subscriptions for each region where
+
+Cancelled is marked as 1.
+
+
+
 ACTIVE CUSTOMERS 
 
 ```SQL
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
 WHERE CANCELED =0
-```
+
+![Screenshot (281)](https://github.com/user-attachments/assets/ff672543-85fd-4c31-894b-e6d955b6f145)
+
+COUNT(*) AS CancellationCount: Counts the number of cancelled subscriptions for each region where
+
+Active is marked as 0.
 
 ### Interactive Dashboard
 
