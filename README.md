@@ -128,7 +128,7 @@ Subscription Patterns
 
 Summary of Subscription Data
 
-1. East Region - Basic Subscription Type:
+1. **East Region** - Basic Subscription Type:
 
 2022:
 
@@ -144,7 +144,7 @@ March: 1,666 subscribers (slight decrease from 2022)
 
 July: 1,680 subscribers (slight increase from March 2023)
 
-2. North Region - Basic Subscription Type:
+2. **North Region** - Basic Subscription Type:
 
 2022:
 
@@ -160,7 +160,7 @@ January: 1,692 subscribers (consistent with the prior year)
 
 May: 1,690 subscribers (marginal increase)
 
-3. South Region - Premium Subscription Type:
+3. **South Region** - Premium Subscription Type:
 
 2022:
 
@@ -174,7 +174,7 @@ October: 1,692 subscribers
 
 February: 1,686 subscribers (slight decline)
 
-4. West Region - Standard Subscription Type:
+4. **West Region** - Standard Subscription Type:
 
 2022:
 
