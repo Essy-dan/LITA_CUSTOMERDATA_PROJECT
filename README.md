@@ -537,7 +537,7 @@ SELECT CUSTOMERID, subscription_duration_months FROM [dbo].[CustomerDataProject]
  WHERE subscription_duration_months > 12
 ```
 
-![Screenshot (277)](https://github.com/user-attachments/assets/b79e8a9f-463a-4594-9b96-f2c7da87d42d
+![Screenshot (277)](https://github.com/user-attachments/assets/b79e8a9f-463a-4594-9b96-f2c7da87d42d)
 
 This query did not return any value because there are no customers with subcription month longer 
 
@@ -651,13 +651,12 @@ COUNT(*) AS CancellationCount: Counts the number of cancelled subscriptions for 
 
 Cancelled is marked as 1.
 
-
-
 ACTIVE CUSTOMERS 
 
 ```SQL
 SELECT COUNT(*) AS ACTIVESUBSCRIPTION FROM [dbo].[CustomerDataProject]
-WHERE CANCELED =0
+WHERE CANCELED = 0
+```
 
 ![Screenshot (281)](https://github.com/user-attachments/assets/ff672543-85fd-4c31-894b-e6d955b6f145)
 
@@ -667,9 +666,11 @@ Active is marked as 0.
 
 ### Interactive Dashboard
 
-![Screenshot (269)](https://github.com/user-attachments/assets/c5197601-31db-4820-a6fd-87585e1b06fb)
+![Screenshot (269)](https://github.com/user-attachments/assets/a79f264b-6616-43a4-acaa-c1e7a8951b30)
+
 
 ### Key Insights and Recommendation
+---
 
 Maintaining High Retention in the East: With zero cancellations, the East is a model region for the Basic subscription. To maintain this, the company should:
 
@@ -700,6 +701,8 @@ The popularity of the Basic subscription type, coupled with the consistent 12-mo
 The revenue pattern suggests that while Basic achieves the highest cumulative revenue due to its dual-region presence, on a per-region basis, each subscription type performs comparably. This indicates balanced demand across regions and shows that the company’s regional approach is well-aligned with customer preferences. The company could consider exploring opportunities to introduce Premium or Standard to additional regions to capitalize on their high revenue potential, potentially boosting overall revenue while maintaining market balance.
 
 The difference in cancellations for Basic in the East versus the North points to regional differences in customer satisfaction and expectations. The company could benefit from adopting a region-specific approach, tailoring retention strategies to address each region’s unique needs. In the North, targeted engagement could help reduce cancellations for Basic, while maintaining the loyalty of East subscribers should be a priority. For Premium in the South and Standard in the West, exploring ways to enhance perceived value could improve retention in those regions.
+
+
 
 
 
